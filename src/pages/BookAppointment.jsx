@@ -22,20 +22,31 @@ function BookAppointment() {
   };
 
   return (
-    <div>
-      <h2>Book Appointment</h2>
+  <div className="page">
+    <h2>Book Appointment</h2>
 
-      <input name="userId" placeholder="User ID" onChange={handleChange} />
-      <input name="doctorId" placeholder="Doctor ID" onChange={handleChange} />
-      <input
-        name="vaccinationCenterId"
-        placeholder="Center ID"
-        onChange={handleChange}
-      />
+    <input
+      name="userId"
+      placeholder="User ID"
+      onChange={handleChange}
+    />
 
-      <button onClick={handleBook}>Book</button>
-    </div>
-  );
+    <input
+      name="doctorId"
+      placeholder="Doctor ID"
+      onChange={handleChange}
+    />
+
+    <input
+      name="vaccinationCenterId"
+      placeholder="Center ID"
+      onChange={handleChange}
+    />
+
+    <button onClick={handleBook}>Book</button>
+  </div>
+);
+
 }
 
 export default BookAppointment;
