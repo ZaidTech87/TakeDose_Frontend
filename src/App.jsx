@@ -1,23 +1,23 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
-import BookAppointment from "./pages/BookAppointment";
-import Appointments from "./pages/Appointments";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Doctor from "./pages/Doctor";
+import User from "./pages/User";
+import Dose from "./pages/Dose";
+import VaccinationCenter from "./pages/VaccinationCenter";
+import Appointment from "./pages/Appointment";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/book" element={<BookAppointment />} />
-        <Route path="/appointments" element={<Appointments />} />
+        <Route path="/doctor" element={<Doctor />} />
+        <Route path="/user" element={<User />} />
+        <Route path="/dose" element={<Dose />} />
+        <Route path="/center" element={<VaccinationCenter />} />
+        <Route path="/appointment" element={<Appointment />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 

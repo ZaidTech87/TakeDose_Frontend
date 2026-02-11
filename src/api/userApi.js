@@ -1,4 +1,4 @@
-import api from "./axios";
+import api from "./axiosConfig";
 
 // POST /user/addUser
 export const addUser = (user) => {
