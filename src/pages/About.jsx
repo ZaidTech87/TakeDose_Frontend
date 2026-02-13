@@ -30,6 +30,16 @@ const About = () => {
             <li>Update User Information</li>
           </ul>
         </div>
+          <h2>Purpose</h2>
+      <p>
+        The purpose of this frontend is to:
+      </p>
+      <ul>
+        <li>Send API requests</li>
+        <li>Test CRUD operations</li>
+        <li>Verify backend responses</li>
+        <li>Check validation and error handling</li>
+      </ul>
 
         <div style={styles.section}>
           <h2>💻 Technologies Used</h2>
@@ -37,10 +47,13 @@ const About = () => {
             <li>React (Vite)</li>
             <li>JavaScript (ES6+)</li>
             <li>CSS</li>
+             <li>Java</li>
+        <li>Spring Boot</li>
+        <li>REST APIs</li>
           </ul>
         </div>
 
-        <button style={styles.button}>Contact Support</button>
+        <button  onClick={() => alert("If you want to Contact us please goto Contact Page")} style={styles.button}>Contact Support</button>
       </div>
     </div>
   );

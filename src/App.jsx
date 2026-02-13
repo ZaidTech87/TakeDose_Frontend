@@ -12,6 +12,8 @@ import BookAppointment from './pages/BookAppointment';
 import GiveDose from './pages/GiveDose';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Login from './pages/Login';
+import LogOut from './pages/LogOut';
 function App() {
   return (
     <Router>
@@ -29,6 +31,8 @@ function App() {
         <Route path="/give-dose" element={<GiveDose />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<LogOut />} />
       </Routes>
     </Router>
   );
