@@ -10,7 +10,8 @@ import AssociateDoctor from './pages/AssociateDoctor';
 import AddCenter from './pages/AddCenter';
 import BookAppointment from './pages/BookAppointment';
 import GiveDose from './pages/GiveDose';
-
+import About from './pages/About';
+import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
@@ -26,6 +27,8 @@ function App() {
         <Route path="/add-center" element={<AddCenter />} />
         <Route path="/book-appointment" element={<BookAppointment />} />
         <Route path="/give-dose" element={<GiveDose />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

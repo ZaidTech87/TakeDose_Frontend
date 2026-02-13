@@ -1,35 +1,94 @@
 import React from "react";
 
-export default function About() {
+const About = () => {
   return (
     <div style={styles.container}>
       <div style={styles.card}>
-        <h1 style={styles.title}>About Us</h1>
+        <h1 style={styles.title}>About TakeDose</h1>
+
         <p style={styles.description}>
-          Welcome to our website! We are passionate about building modern,
-          fast, and user-friendly web applications using React and Vite.
+          TakeDose is a vaccination management system designed to help users,
+          doctors, and vaccination centers manage appointments and records
+          efficiently.
         </p>
 
         <div style={styles.section}>
-          <h2>Our Mission</h2>
+          <h2>🎯 Our Goal</h2>
           <p>
-            Our mission is to create high-quality digital experiences that are
-            simple, beautiful, and efficient.
+            Our goal is to simplify vaccination tracking and appointment
+            scheduling through a clean and user-friendly platform.
           </p>
         </div>
 
         <div style={styles.section}>
-          <h2>Technologies We Use</h2>
+          <h2>⚙️ Features</h2>
           <ul>
-            <li>React</li>
-            <li>Vite</li>
-            <li>JavaScript (ES6+)</li>
-            <li>CSS3</li>
+            <li>Add & Manage Users</li>
+            <li>Add Doctors & Centers</li>
+            <li>Book Appointments</li>
+            <li>Track Vaccination Dates</li>
+            <li>Update User Information</li>
           </ul>
         </div>
 
-        <button style={styles.button}>Contact Us</button>
+        <div style={styles.section}>
+          <h2>💻 Technologies Used</h2>
+          <ul>
+            <li>React (Vite)</li>
+            <li>JavaScript (ES6+)</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+
+        <button style={styles.button}>Contact Support</button>
       </div>
     </div>
   );
-}
+};
+
+const styles = {
+  container: {
+    minHeight: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    background: "linear-gradient(to right, #1e3c72, #2a5298)",
+    padding: "20px",
+  },
+  card: {
+    backgroundColor: "#ffffff",
+    padding: "40px",
+    borderRadius: "12px",
+    boxShadow: "0 10px 25px rgba(0, 0, 0, 0.2)",
+    maxWidth: "700px",
+    width: "100%",
+  },
+  title: {
+    textAlign: "center",
+    marginBottom: "20px",
+    fontSize: "32px",
+    color: "#2a5298",
+  },
+  description: {
+    textAlign: "center",
+    fontSize: "18px",
+    marginBottom: "30px",
+    color: "#555",
+  },
+  section: {
+    marginBottom: "20px",
+  },
+  button: {
+    display: "block",
+    margin: "30px auto 0",
+    padding: "10px 25px",
+    borderRadius: "8px",
+    border: "none",
+    backgroundColor: "#2a5298",
+    color: "#fff",
+    fontSize: "16px",
+    cursor: "pointer",
+  },
+};
+
+export default About;
