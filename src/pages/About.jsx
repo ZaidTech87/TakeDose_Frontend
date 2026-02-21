@@ -105,4 +105,5 @@ const styles = {
 };
 
 export default About;
-// i have to chaeck this
+// // i have to chaeck this
+// okay we ell do its very nesessory
