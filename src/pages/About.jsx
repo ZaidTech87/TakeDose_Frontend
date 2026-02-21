@@ -105,3 +105,4 @@ const styles = {
 };
 
 export default About;
+// i have to chaeck this
